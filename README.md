@@ -45,3 +45,94 @@ npm run dev
 
 # 5. Acesse no navegador
 # http://localhost:5173
+
+
+
+
+# ESTRUTURA DO PROJETO #
+text
+src/
+├── components/
+│   ├── auth/          # Componentes de autenticação (LoginForm)
+│   ├── clients/       # Componentes de clientes (ClientCard, ClientForm)
+│   ├── layout/        # Layout (Header, Sidebar, MainLayout)
+│   ├── vehicles/      # Componentes de veículos (VehicleCard, VehicleForm)
+│   └── serviceOrders/ # Componentes de OS (ServiceOrderCard, ServiceOrderForm)
+├── pages/             # Páginas da aplicação
+├── services/          # Serviços (LocalStorage)
+├── utils/             # Utilitários (validações de email e senha)
+└── hooks/             # Hooks personalizados
+
+
+________________________________________________________________________
+
+           # FUNCIONALIDADES DETALHADAS #
+
+        # Login
+Validação de email em tempo real
+
+Validação de senha forte (maiúscula, minúscula, número, 6+ caracteres)
+
+Botão "olhinho" para mostrar/esconder senha
+
+Mensagens de erro amigáveis
+__________________________________________________________________________
+
+
+        # Clientes
+Cadastro com nome, email, telefone, tipo (particular/empresa) e endereço
+
+Listagem em cards organizados
+
+Busca por nome, email ou telefone
+
+Edição e exclusão com confirmação
+__________________________________________________________________________
+
+
+        # Veículos
+Cadastro com placa, modelo, marca, ano, cor e tipo (carro/moto/caminhão)
+
+Status: ⏳ Aguardando serviço, 🔧 Em manutenção, ✅ Serviço concluído
+
+Vínculo com cliente (opcional)
+
+Busca por placa, modelo ou marca
+__________________________________________________________________________
+
+
+        # Ordens de Serviço
+Vinculação com cliente e veículo
+
+Adição de serviços e peças com valores
+
+Cálculo automático do total
+
+Status: 🟡 Aberta, 🔵 Em andamento, ✅ Concluída
+
+Busca por cliente ou placa do veículo
+___________________________________________________________________________
+
+
+        # Responsividade
+O sistema se adapta a diferentes tamanhos de tela:
+
+📱 Mobile: Menu hambúrguer, cards em 1 coluna
+
+💻 Tablet: Menu lateral visível, cards em 2 colunas
+
+🖥️ Desktop: Menu lateral visível, cards em 3 colunas
+
+
+
+
+____________________________________________________________________________
+----------------------------------------------------------------------------
+
+                               # Autores
+                 * DOUGLAS INACIO & * Eric Albuquerque
+
+----------------------------------------------------------------------------
+_____________________________________________________________________________
+
+
